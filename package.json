@@ -14,5 +14,8 @@
     "grunt-regex-replace": "~0.2.5",
     "grunt-spritesmith": "^1.26.0",
     "matchdep": "~0.1.2"
+  },
+  "dependencies": {
+    "express": "^4.4.3"
   }
 }
