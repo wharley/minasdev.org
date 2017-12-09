@@ -155,9 +155,9 @@ gulp.task('images', () => {
     .pipe(
       gulpImagemin(
         [
-          gulpImagemin.gifsicle(),
-          gulpImagemin.jpegtran(),
-          gulpImagemin.optipng(),
+          gulpImagemin.gifsicle({ interlaced: true }),
+          gulpImagemin.jpegtran({ progressive: true }),
+          gulpImagemin.optipng({ optimizationLevel: 5 }),
           gulpImagemin.svgo({
             plugins: [{ cleanupIDs: false }, { removeViewBox: false }, { minifyStyles: false }, { removeUselessDefs: false }]
           })
