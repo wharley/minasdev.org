@@ -121,7 +121,7 @@ injectGlobal`
   svg{display:inline-flex}
   img{display:block;width:100%}
   body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
-  body{line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-family: montserrat-thin;}
+  body{line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-family: montserrat-regular;}
 `;
 
 export const Wrapper = styled.div``;

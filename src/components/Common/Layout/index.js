@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Wrapper } from "@components/Common/Layout/UI";
+import { Wrapper } from "./UI";
 import { renderRoutes } from "@services/Routes";
 
 const Layout = ({ route }) => (

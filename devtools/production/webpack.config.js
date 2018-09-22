@@ -118,6 +118,7 @@ module.exports = {
         from: `${srcPath}assets/images/facebook-thumb.png`,
         to: `${distPath}images/facebook-thumb.png`
       },
+      { from: `${srcPath}assets/images/vectors`, to: `${distPath}images/vectors` },
       { from: `${srcPath}assets/images/favicons`, to: `${distPath}images/favicons` },
       { from: `${srcPath}assets/static`, to: distPath }
     ]),

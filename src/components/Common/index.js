@@ -1,4 +1,6 @@
-import Html from "@components/Common/Html";
 import Layout from "@components/Common/Layout";
+import MinasDevLogo from "@components/Common/MinasDevLogo";
+import Newsletter from "@components/Common/Newsletter";
+import Footer from "@components/Common/Footer";
 
-export { Html, Layout };
+export { Layout, MinasDevLogo, Newsletter, Footer };

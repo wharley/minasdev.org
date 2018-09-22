@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Wrapper, NotFoundTitle } from "@pages/NotFound/UI";
+import { Wrapper, NotFoundTitle } from "./UI";
 
 const NotFound = () => {
   return (
