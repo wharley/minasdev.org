@@ -1,11 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Wrapper } from "./UI";
+import { Wrapper, FooterText } from "./UI";
 
 const Footer = () => {
   return (
     <Wrapper>
-      <small>2013-2018 © Minas Dev</small>
+      <FooterText>
+        2013-
+        {new Date().getFullYear()} © Minas Dev
+      </FooterText>
     </Wrapper>
   );
 };

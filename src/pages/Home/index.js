@@ -3,23 +3,22 @@ import Helmet from "react-helmet";
 import { ProximosEventos } from "@containers/Home";
 import { MinasDevLogo, Newsletter, Footer } from "@components/Common";
 import { Header, About } from "@components/Home";
-import { Wrapper } from "./UI";
+import { Wrapper, ParallaxTop, ParallaxBottom } from "./UI";
 
 const Home = () => (
   <Wrapper>
     <Helmet title={"Minas Dev"} />
 
-    <div>
+    <ParallaxTop>
       <Header />
       <About />
-    </div>
+    </ParallaxTop>
 
-    <div>
+    <ParallaxBottom>
       <Newsletter />
       <ProximosEventos />
-    </div>
-
-    <Footer />
+      <Footer />
+    </ParallaxBottom>
   </Wrapper>
 );
 
