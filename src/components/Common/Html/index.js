@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import CircularJSON from "circular-json";
 import { ServerStyleSheet } from "styled-components";
+import { ScreenReaderContent } from "@components/Common";
 
 const Html = ({ assets, component, store }) => {
   const head = Helmet.rewind();
@@ -20,20 +21,9 @@ const Html = ({ assets, component, store }) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
         />
 
-        {head.base.toComponent()}
         {head.meta.toComponent()}
         {head.link.toComponent()}
-        {head.script.toComponent()}
-
-        {/* About */}
         {head.title.toComponent()}
-        <meta
-          name="description"
-          content="O Minas Dev visa unir comunidades e membros dos setores de Tecnologia da Informação de Minas Gerais."
-        />
-
-        {/* Prefetch external assets */}
-        <link rel="dns-prefetch" href="https://minasdev.org/" />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://minasdev.org/" />
@@ -94,34 +84,17 @@ const Html = ({ assets, component, store }) => {
         />
 
         {/* Facebook Tags */}
-        <meta property="og:title" content="Minas Dev" />
-        <meta
-          property="og:description"
-          content="O Minas Dev visa unir comunidades e membros dos setores de Tecnologia da Informação de Minas Gerais."
-        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://minasdev.org/" />
         <meta property="og:image" content="https://minasdev.org/images/facebook-thumb.png" />
-        <meta property="og:site_name" content="Minas Dev" />
 
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@minasdev" />
         <meta name="twitter:creator" content="@obetomuniz" />
-        <meta name="twitter:url" content="https://minasdev.org/" />
-        <meta name="twitter:title" content="Minas Dev" />
-        <meta
-          name="twitter:description"
-          content="O Minas Dev visa unir comunidades e membros dos setores de Tecnologia da Informação de Minas Gerais."
-        />
+
         <meta name="twitter:image" content="https://minasdev.org/images/facebook-thumb.png" />
 
         {/* Schema.org */}
-        <meta itemProp="name" content="Minas Dev" />
-        <meta
-          itemProp="description"
-          content="O Minas Dev visa unir comunidades e membros dos setores de Tecnologia da Informação de Minas Gerais."
-        />
         <meta itemProp="image" content="https://minasdev.org/images/facebook-thumb.png" />
 
         {/* Google Tags */}
@@ -132,6 +105,10 @@ const Html = ({ assets, component, store }) => {
         {sheet.getStyleElement()}
       </head>
       <body>
+        <noscript>
+          Seu navegador não suporta scripts. Experimente usar outro navegador, ou atualizar para um
+          mais moderno.
+        </noscript>
         <div id="container" dangerouslySetInnerHTML={{ __html: body }} />
         {store && (
           <script

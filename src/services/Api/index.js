@@ -1,6 +1,5 @@
 import axios from "axios";
 
-const getTestsEndpoint = () =>
-  axios.get("https://jsonplaceholder.typicode.com/photos/1");
+const getMinasDevEvents = () => axios.get("https://api.minasdev.org/events");
 
-export { getTestsEndpoint };
+export { getMinasDevEvents };

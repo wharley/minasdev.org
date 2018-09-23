@@ -11,12 +11,12 @@
   "theme_color": "#E64C3B",
   "icons": [
     {
-      "src": "/assets/images/favicons/android-chrome-192x192.png",
+      "src": "/images/favicons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/images/favicons/android-chrome-512x512.png",
+      "src": "/images/favicons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

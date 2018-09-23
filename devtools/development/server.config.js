@@ -16,7 +16,7 @@ const serverOptions = {
   contentBase: `http://localhost:3000`,
   quiet: true,
   noInfo: true,
-  hot: true,
+  hot: false,
   inline: true,
   lazy: false,
   historyApiFallback: true,

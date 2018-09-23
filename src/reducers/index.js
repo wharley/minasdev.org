@@ -1,6 +1,6 @@
 import { combineReducers } from "redux-immutable";
 import routerReducer from "@reducers/Router";
-import testsReducer from "@reducers/Tests";
+import minasdevReducer from "@reducers/MinasDev";
 
 export const createActions = ({ state, action }, actions) => {
   const cases = actions[action.type];
@@ -9,7 +9,7 @@ export const createActions = ({ state, action }, actions) => {
 
 const rootReducer = combineReducers({
   routing: routerReducer,
-  tests: testsReducer
+  minasdev: minasdevReducer
 });
 
 export default rootReducer;

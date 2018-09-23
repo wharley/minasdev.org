@@ -1,3 +1,3 @@
-import ProximosEventos from "@containers/Home/ProximosEventos";
+import NextEvents from "@containers/Home/NextEvents";
 
-export { ProximosEventos };
+export { NextEvents };

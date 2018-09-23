@@ -1,4 +1,4 @@
-import Header from "@components/Home/Header";
 import About from "@components/Home/About";
+import Event from "@components/Home/Event";
 
-export { Header, About };
+export { About, Event };

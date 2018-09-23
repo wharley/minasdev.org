@@ -47,6 +47,7 @@
     "axios": "^0.18.0",
     "circular-json": "^0.5.7",
     "copy-webpack-plugin": "^4.5.2",
+    "date-fns": "^1.29.0",
     "enzyme-adapter-react-16": "^1.2.0",
     "express": "^4.16.3",
     "immutable": "^3.8.2",
