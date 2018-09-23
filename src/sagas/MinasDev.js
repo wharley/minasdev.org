@@ -5,8 +5,10 @@ import { getMinasDevEvents } from "@services/Api";
 export function* fetchMinasDevEvents() {
   try {
     const events = yield call(getMinasDevEvents);
+    localStorage.setItem("events", JSON.stringify(events.data));
     yield put(getMinasDevEventsSuccess(events.data));
   } catch (error) {
-    yield put(getMinasDevEventsFailure(error));
+    const events = JSON.parse(localStorage.getItem("events"));
+    yield put(getMinasDevEventsFailure(error, events));
   }
 }

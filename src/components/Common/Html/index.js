@@ -4,7 +4,6 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import CircularJSON from "circular-json";
 import { ServerStyleSheet } from "styled-components";
-import { ScreenReaderContent } from "@components/Common";
 
 const Html = ({ assets, component, store }) => {
   const head = Helmet.rewind();

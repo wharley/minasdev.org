@@ -20,7 +20,11 @@ export default (state = initialState, action) => {
       [FETCH_MINASDEV_EVENTS_SUCCESS]: () =>
         state.merge({ isLoading: false, events: action.payload.events }),
       [FETCH_MINASDEV_EVENTS_FAILURE]: () =>
-        state.merge({ isLoading: false, error: action.payload.error })
+        state.merge({
+          isLoading: false,
+          error: action.payload.error,
+          events: action.payload.events
+        })
     }
   );
 };

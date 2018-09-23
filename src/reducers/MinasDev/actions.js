@@ -1,3 +1,4 @@
+import { fromJS } from "immutable";
 import {
   FETCH_MINASDEV_EVENTS_REQUEST,
   FETCH_MINASDEV_EVENTS_SUCCESS,
@@ -17,9 +18,9 @@ export const getMinasDevEventsSuccess = events => {
   };
 };
 
-export const getMinasDevEventsFailure = error => {
+export const getMinasDevEventsFailure = (error, events = []) => {
   return {
     type: FETCH_MINASDEV_EVENTS_FAILURE,
-    payload: { error }
+    payload: { error, events }
   };
 };
